@@ -51,18 +51,20 @@ function UserNavbarHeader(props) {
 			className="user relative flex flex-col items-center justify-center pt-24 pb-64 mb-32 z-0"
 		>
 			<Typography className="username text-16 whitespace-no-wrap" color="inherit">
-				{user.data.displayName}
+				{/* {user.data.displayName}
+				{user.data.displayName} */
+				'Joe Tanksley'}
 			</Typography>
 			<Typography className="email text-13 mt-8 opacity-50 whitespace-no-wrap" color="inherit">
-				{user.data.email}
+				{/* {user.data.email} */'jtanksley06@gmail.com'}
 			</Typography>
 			<Avatar
 				className={clsx(classes.avatar, 'avatar')}
 				alt="user photo"
 				src={
 					user.data.photoURL && user.data.photoURL !== ''
-						? user.data.photoURL
-						: 'assets/images/avatars/profile.jpg'
+						? 'assets/images/avatars/Joe.jpg'
+						: 'assets/images/avatars/Joe.jpg'
 				}
 			/>
 		</AppBar>
